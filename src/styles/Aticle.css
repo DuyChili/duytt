@@ -1,0 +1,238 @@
+.icon{
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.3s ease; /* Thêm hiệu ứng chuyển động mượt mà */
+}
+.icon:hover {
+    transform: scale(0.98); /* Giảm kích thước của icon container */
+}
+.icon:hover i {
+    color: green; /* Thay đổi màu biểu tượng thành xanh lá khi hover */
+}
+
+.image-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Nền trong suốt */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.overlay i {
+    color: white;
+    font-size: 30px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+
+.c{
+   background-color: rgb(32, 141, 28);
+}
+.c .box-title-2{
+    color: rgb(53, 52, 51);
+}
+.c .alhpa{
+    color: rgba(254, 254, 254, 0.9);
+}
+#section-3{
+    width: 100%;
+    background-image: url("../img/s-106.jpg");
+    background-position: initial; /* Căn giữa ảnh nền */
+    background-repeat: no-repeat;
+    display: flex; /* Sử dụng flex để căn giữa */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: stretch; /* Căn giữa các phần tử con và đảm bảo chiều cao bằng nhau */
+}
+.c a {
+
+    border: 1px solid white; /* Viền trắng */
+    color: white; /* Màu chữ mặc định */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    padding: 10px 20px; /* Thêm khoảng cách trong thẻ */
+    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển đổi mượt */
+}
+
+.c a:hover {
+    background-color: white; /* Đổi nền thành trắng */
+    color: green; /* Đổi màu chữ thành xanh lá */
+}
+
+.alert {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: space-between; /* Căn giữa theo chiều ngang và khoảng cách giữa các phần tử */
+    padding: 15px;
+}
+
+.alert .close {
+    margin-left: auto; /* Đẩy nút đóng ra phía bên phải */
+    border: none;
+    background: none;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.alert i {
+    margin-right: 10px; /* Khoảng cách giữa biểu tượng và văn bản */
+}
+
+.alert p {
+    margin: 0; /* Xóa khoảng cách mặc định của thẻ p */
+    color: white;
+}
+.large-padding >.container{
+    background-image: url("../img/i-101.png");
+    background-position: calc(100% - 200px) center ; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: inherit;  
+}
+
+
+
+.border-right {
+    border-right: 2px dashed #ddd; /* Đường viền gạch đứt */
+}
+#d > .col-sm-4:last-child {
+    border-right: none; /* Xóa viền của cột cuối cùng */
+}
+
+.circle-icon {
+    font-size: 40px;
+    color: white;
+    background-color: #5c5d5e; /* Màu nền (bg-dark) */
+    border-radius: 50%; /* Bo góc thành hình tròn */
+    display: inline-flex; /* Hiển thị dưới dạng khối để căn giữa nội dung */
+    align-items: center; /* Căn giữa dọc nội dung */
+    justify-content: center; /* Căn giữa ngang nội dung */
+    width: 80px; /* Kích thước cố định ngang */
+    height: 80px; /* Kích thước cố định dọc */
+    transition: all 0.3s ease; /* Thêm hiệu ứng mượt khi hover */
+}
+
+#d > .col-sm-4:hover i, 
+#d > .col-sm-4 i:hover{
+    background-color: green; /* Màu xanh khi hover */
+    box-shadow: inset 0 0 15px rgba(38, 38, 39, 0.6); /* Độ bóng bên trong */
+}
+
+.e> .container-fuild {
+    background: linear-gradient(rgba(35, 47, 53, 0.5), rgba(60, 42, 42, 0.5)), 
+                url("../img/s-107.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+     background-size: cover; /*Sử dụng cover */
+}
+
+.input-box {
+    position: relative; /* Đặt relative để icon nằm trong input */
+    margin-bottom: 20px;
+}
+
+.input-box input,
+.input-box textarea {
+    padding-right: 40px; /* Chừa khoảng trống bên phải cho icon */
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #fff; /* Màu chữ khi người dùng gõ vào */
+    background-color: rgba(255, 255, 255, 0.0) !important; /* Nền trắng mờ nhẹ */
+}
+
+.input-box textarea {
+    padding-right: 40px; /* Chừa khoảng trống bên phải cho icon */
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.input-box i {
+    position: absolute;
+    top: 5px; /* Căn icon lên phía trên */
+    right: 10px; /* Đặt icon sát bên phải */
+    font-size: 18px; /* Kích thước icon */
+    color: #999; /* Màu icon */
+    pointer-events: none; /* Để không ảnh hưởng đến việc nhập liệu */
+}
+
+/* Áp dụng màu trắng cho placeholder */
+.input-box textarea::placeholder,
+.input-box input::placeholder {
+    color: #fff; /* Màu placeholder */
+    opacity: 1; /* Đảm bảo độ đậm của màu */
+}
+
+/* Nếu muốn chỉ áp dụng cho phần tử cụ thể */
+#name::placeholder, #email::placeholder, #message::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+/* Đổi màu border khi nhấn vào input hoặc textarea */
+.form-control:focus {
+    border-color: green; /* Màu xanh khi focus */
+    box-shadow: 0 0 0 0.25rem rgba(0, 255, 98, 0.25); /* Đổ bóng xanh */
+}
+
+.c > .btn.active {
+    background-color: #28a745; /* Màu nền xanh lá khi active */
+    color: white; /* Màu chữ trắng khi active */
+}
+
+.c>.btn {
+    background-color: transparent; /* Màu nền trong suốt */
+    border: 1px solid #28a745; /* Đặt viền xanh lá cho nút */
+    color: #28a745; /* Màu chữ xanh lá */
+}
+
+.c> .btn:hover {
+    background-color: #28a745; /* Màu nền khi hover */
+    color: white; /* Màu chữ khi hover */
+}
+
+
+
+/* Khi trên màn hình nhỏ (Điện thoại) */
+@media (max-width: 767px) {
+    .col-sm-4 {
+        width: 100%; /* Xếp các hình ảnh thành một dòng */
+    }
+}
+
+.c > .container{
+    background-image: url("../img/shadow.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: scroll;
+    background-position-x: 50%;
+    background-position-y: 0%;
+}
+
+.fade-image {
+    transition: opacity 0.8s ease-in-out;
+    opacity: 1;
+}
+.fade-image.hidden {
+    opacity: 0;
+}
